@@ -46,7 +46,8 @@ SELECT
         Neighbour_disputes
     ) AS Total_crimes
 FROM berlin_crimes
-GROUP BY `Year`, District;
+GROUP BY `Year`, District
+ORDER BY `Year` ASC, Total_crimes DESC;
 
 
 -- 3 --
